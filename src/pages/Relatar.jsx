@@ -28,11 +28,12 @@ function Relatar() {
         console.log(relatos)
     }
 
-    const handleChangeNome = (e) => {
+    const handleChangeTitulo = (e) => {
         setNome(e.target.value);
     }
 
-    const handleChangeEmail = (e) => {
+    
+    const handleChangeDescricao = (e) => {
         setEmail(e.target.value);
     }
 
@@ -50,16 +51,14 @@ function Relatar() {
             <form onSubmit={handleSubmit}>
                 <div className="relatar-page">
                     <div className="form-relato">
-                        <div className="dados-pessoais">
-                            <label className="form-nome inpt">
-                                Nome:
-                                <input id="nome" type="text" onChange={handleChangeNome} value={nome}/>
-                            </label>
-                            <label className="form-email inpt">
-                                Email:
-                                <input id="e-mail" type="text" onChange={handleChangeEmail} value={email}/>
-                            </label>
-                        </div>
+                        <label className="form-nome inpt">
+                            Titulo:
+                            <input id="nome" type="text" onChange={handleChangeTitulo} value={nome}/>
+                        </label>
+                        <label className="form-email inpt">
+                            Descrição:
+                            <input id="e-mail" type="text" onChange={handleChangeDescricao} value={email}/>
+                        </label>
                         <label className="form-relatar">
                             Relato:
                             <textarea cols="96" rows="10" type="text" onChange={handleChangeRelato} value={relato}/>
@@ -74,25 +73,6 @@ function Relatar() {
                 </div>
             </form>
 
-            <table className="table-json">
-                <thead>
-                <tr>
-                    <th>Número da compra</th>
-                    <th>Nome</th>
-                    <th>Email</th>
-                </tr>
-                </thead>
-                <tbody>
-                {relatos.map((e) =>
-                    <tr>
-                        <td>{e.número}</td>
-                        <td>{e.nome}</td>
-                        <td>{e.email}</td>
-                    </tr>
-                )}
-                </tbody>
-            </table>
-            
         </div>
     )
 }

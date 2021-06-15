@@ -1,6 +1,6 @@
 
-ul {
-    width: 450px;
+
+ul{
     display: flex;
     justify-content: space-between;
     margin-right: 2cm;
@@ -14,13 +14,17 @@ li {
     color: black;
 }
 
-.links {
-    color: grey;
+.links{
     text-decoration: none;
+    width: 10;
 }
 
 .each-link {
     text-decoration: none;
-
+    color: grey;
+    margin-left: 15px;
+}
+.each-link:hover {
+    color: rgb(110, 64, 131);
 }
 
