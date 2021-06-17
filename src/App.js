@@ -10,6 +10,7 @@ import Relatar from './pages/Relatar.jsx'
 import Definition from './pages/Definition.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import Login from './pages/Login.jsx';
+import User from './pages/User';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/Contatos"  component={Contatos}/>
           <Route path="/Definition"  component={Definition}/>
           <Route path="/Login" component={Login}/>
+          <Route path="/User" component={User}/>
         </Switch>
       </BrowserRouter>
      <Footer/>

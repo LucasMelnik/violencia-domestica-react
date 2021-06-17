@@ -22,6 +22,7 @@ function Nav() {
                 <li>
                     <Link className="each-link" to="/Contatos">Contato</Link>
                 </li>
+              
 
             </ul>
         </nav>

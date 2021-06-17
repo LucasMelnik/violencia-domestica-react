@@ -5,6 +5,7 @@ import Titulo from '../components/Relatos/Titulo';
 import { Link } from 'react-router-dom';
 import '../styles/Login.css';
 
+
 function Login(){
     return(
         <div className="login">
@@ -17,6 +18,7 @@ function Login(){
                     <br/>
                     <span className={"psw"}><Link  to={Login}>Esqueci minha senha</Link></span>
                     <button type="submit">Login</button>
+                    <button type="submit">Cadastre-se</button>
 
                 </form>
             </div>
